@@ -18,7 +18,7 @@ Siga as etapas abaixo para clonar e executar o projeto localmente:
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/levilude/todo-list.git
+   git clone https://github.com/levilude/todolist.git
 
 ## Servidor de Desenvolvimento
 Execute `ng serve` para iniciar um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. A aplicação será recarregada automaticamente se você alterar qualquer um dos arquivos fonte.
