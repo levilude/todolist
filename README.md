@@ -1,27 +1,27 @@
-# Todolist
+# Todo List
+Este é um aplicativo de lista de tarefas simples, desenvolvido com Angular. Ele permite que os usuários adicionem, editem e excluam tarefas, marcando-as como concluídas conforme necessário. O design é responsivo e se adapta a diferentes tamanhos de tela, facilitando o uso em dispositivos móveis como iPhones.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
+## Funcionalidades
+- **Adicionar Tarefa:** Adicione novas tarefas à lista pressionando "Enter" ou clicando no botão "Adicionar".
+- **Editar Tarefa:** Edite o nome das tarefas existentes clicando no ícone de lápis ao lado da tarefa e salvando ao pressionar "Enter" ou clicando fora do campo de texto.
+- **Excluir Tarefa:** Exclua tarefas da lista clicando no ícone de lixeira ao lado da tarefa.
+- **Marcar como Concluída:** Marque uma tarefa como concluída ou desmarque-a clicando na caixa de seleção ao lado do nome da tarefa.
+- **Capitalização Automática:** A primeira letra de cada tarefa é automaticamente capitalizada ao ser adicionada ou editada.
 
-## Development server
+## Tecnologias Utilizadas
+- **Angular:** Framework front-end para o desenvolvimento da aplicação.
+- **Bootstrap:** Biblioteca de CSS para estilização e layout responsivo.
+- **Git:** Controle de versão para gerenciar o desenvolvimento da aplicação.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instalação e Configuração
+Siga as etapas abaixo para clonar e executar o projeto localmente:
 
-## Code scaffolding
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/levilude/todolist.git
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Servidor de Desenvolvimento
+Execute `ng serve` para iniciar um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. A aplicação será recarregada automaticamente se você alterar qualquer um dos arquivos fonte.
 
 ## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Execute `ng build` para compilar o projeto. Os artefatos de build serão armazenados no diretório `dist/`.
