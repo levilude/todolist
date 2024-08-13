@@ -1,0 +1,30 @@
+<div class="todo-container">
+  <h1>Todo List</h1>
+  <ul class="todo-list">
+    <li *ngFor="let task of tasks; let i = index" class="d-flex align-items-center">
+      <input type="checkbox" [(ngModel)]="task.completed">
+      
+      <!-- Mostra o texto da tarefa quando não está em edição -->
+      <span *ngIf="editingIndex !== i" [class.completed]="task.completed" class="task-name flex-grow-1">
+        {{ task.name }}
+      </span>
+      
+      <!-- Mostra o input editável quando a tarefa está em edição -->
+      <input *ngIf="editingIndex === i" [(ngModel)]="tasks[i].name" class="form-control flex-grow-1" 
+             (blur)="saveTask()" (keyup.enter)="saveTask()" (input)="onTaskNameInput(i)">
+      
+      <div class="task-actions ms-2">
+        <!-- Botão de editar -->
+        <i *ngIf="editingIndex !== i" class="bi bi-pencil-square me-2" (click)="editTask(i)"></i>
+        
+        <!-- Botão de deletar -->
+        <i class="bi bi-trash" (click)="deleteTask(i)"></i>
+      </div>
+    </li>
+  </ul>
+  <div class="input-group mt-3 justify-content-center">
+    <input type="text" class="form-control" [(ngModel)]="newTask" placeholder="Nova tarefa" 
+           (keyup.enter)="addTask()" (input)="onInputNewTask()">
+    <button class="btn btn-primary ms-2" (click)="addTask()">Adicionar</button>
+  </div>
+</div>

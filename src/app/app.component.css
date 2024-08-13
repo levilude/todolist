@@ -1,0 +1,60 @@
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .todo-list input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .task-name {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: grey;
+  }
+  
+  .input-group {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .input-group .form-control {
+    flex-grow: 1;
+  }
+  
+  .input-group .btn {
+    flex-shrink: 0;
+  }
+  
+  .task-actions i {
+    cursor: pointer; /* Adiciona a "mãozinha" nos ícones */
+    color: #007bff;
+  }
+  
+  .task-actions i:hover {
+    color: #0056b3;
+  }
+  
